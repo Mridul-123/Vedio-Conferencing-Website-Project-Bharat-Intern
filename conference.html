@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Video Conferencing Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <p>Welcome to Our Vedio Conferencing Website , It's User Friendly and Easy to Use</p>
+        <h2>Connect Meeting</h2>
+
+        <div class="video-container">
+            <img src="connect.png" alt="Video Conference" class="video-image">
+        </div>
+
+        <div class="conference-options">
+            <button id="join-button" class="btn1" onclick="openJoinForm()">Join the Meeting</button>
+            <button class="btn1">Invite for Meeting</button>
+        </div>
+
+    </div>
+
+    <div id="join-form" style="display: none;">
+        <h3>Join Meeting</h3>
+        <div id="join-options-link" style="display: none;">
+            <h4>Join via Link</h4>
+            <label for="link-input">Link:</label>
+            <input type="text" id="link-input">
+        </div>
+
+        <div id="join-options-code" style="display: none;">
+            <h4>Join via Code</h4>
+            <label for="code-input">Code:</label>
+            <input type="text" id="code-input">
+        </div>
+
+        <button class="btn" onclick="joinMeeting()">Join</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
